@@ -1,0 +1,41 @@
+<app-sidebar class="sidebar_menu"></app-sidebar>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button auto-hide="false">
+          <img class="icon_menu_img" src="../../assets/Icons/ic_menu.png">
+        </ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="dashobard_title">Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-img src="/assets/Icons/Group_1.png" slot="start" style="width: 7%;"></ion-img>
+      <ion-label [routerLink]="['/change-password']">Change Password</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-img src="/assets/Icons/Group_2.png" slot="start" style="width: 7%;"></ion-img>
+      <ion-label (click)="contact()">Contact Us</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-img src="/assets/Icons/Group_3.png" slot="start" style="width: 7%;"></ion-img>
+      <ion-label (click)="terms()">Terms and Conditions</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-img src="/assets/Icons/Group_4.png" slot="start" style="width: 7%;"></ion-img>
+      <ion-label (click)="privacypolicy()">Privacy Policy</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-img src="/assets/Icons/Group_5.png" slot="start" style="width: 7%;"></ion-img>
+      <ion-label (click)="delteAccount()">Delete Account</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-img src="/assets/Icons/Group_6.png" slot="start" style="width: 7%;"></ion-img>
+      <ion-label [routerLink]="['/login']">Logout</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

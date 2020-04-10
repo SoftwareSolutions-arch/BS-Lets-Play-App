@@ -1,0 +1,183 @@
+ion-toolbar.in-toolbar.md.toolbar-title-default.hydrated {
+    padding: 11px 0px;
+    --background: auto;
+    background: linear-gradient(to right, #e6cd1d 27%, #0032ea 97%);
+    }
+    .header-md:after{
+    display: none !important;
+    }
+    ion-content.dashboard.md.hydrated {
+    --background: auto;
+    background: linear-gradient(to bottom, #0012ff, rgba(183, 197, 252, 0.27));
+    }
+    ion-title.dashobard_title.md.title-default.hydrated {
+    color: #fff;
+    font-weight: 18px !important;
+    text-align: center;
+    width: auto;
+    font-weight: bold;
+    margin-right: 50px;
+
+    }
+    ion-card.box_img.md.hydrated {
+    padding:0px 0px 10px;
+    overflow: visible;
+    
+    }
+    span.arrow {
+    width: 130px;
+    float: right;
+    margin-top: 1px;
+    position: absolute;
+    right: -25px;
+    height: 40px;
+    top: 50px;
+    z-index: 999;
+    background: blue;
+    -webkit-clip-path: polygon(23% 0%, 100% 0%, 100% 110%, 25% 100%, 0% 50%);
+    clip-path: polygon(23% 0%, 100% 0%, 100% 110%, 25% 100%, 0% 50%);
+    }
+    ion-card-content.image_dash.md.card-content-md.hydrated {
+    position: relative;
+    }
+    ion-tab-bar.white_tab.ion-color.ion-color-light.md.hydrated {
+    background: linear-gradient(to right, #0032ea 27%, #fff 85%);
+    }
+    ion-tab-button#tab-button-speakers {
+    background: linear-gradient(to right, #0032EB , #e6cd1d);
+    }
+    ion-label.speaker.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    font-size: 21px;
+    color: #fff;
+    }
+    ion-label.contact_label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    
+    font-size: 21px;
+    color: #000;
+    }
+    .imge_box {
+    padding: 77px 12px 32px;
+    }
+    h2.price {
+    padding: 3px 21px 0px;
+    font-weight: bold;
+    color: #fff;
+    font-size: x-large;
+    
+    }
+    a.date {
+    font-size: large;
+    color: blue;
+    }
+    label.to {
+    color: black;
+    }
+    label.to {
+    color: black;
+    }
+    img.icon_cal {
+    width: 6%;
+    padding: 0px 1px 0px;
+    
+    }
+    img.edit_icon {
+    float: right;
+    width: 7%;
+    }
+    ion-title.padding.md.title-default.hydrated {
+    padding: 0px;
+    }
+    .loca {
+    padding: 11px;
+    }
+    img.place {
+    width: 13px;
+    padding-top: 11px;
+    }
+    a.location_title {
+    color: #000;
+    }
+    img.plus_icn {
+    float: right;
+    height: auto;
+    margin-top: 42px;
+    width: 35px;
+    padding: 4px 2px 0px;
+    margin-right: 20px;
+    
+    }
+
+    ion-buttons.abc.buttons-last-slot.sc-ion-buttons-md-h.sc-ion-buttons-md-s.md.hydrated {
+        width: 13%;
+    }   
+
+.profile_des {
+    float: left;
+    width: 80%;
+    padding: 10px 20px;
+}
+ion-avatar.md.hydrated {
+    width: 20%;
+    float: left;
+}
+.profile_des span {
+    display: block;
+    color: #fff;
+}
+.profile_des p {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    margin: 0px;
+}
+
+ion-item.item.md.in-list.ion-focusable.item-label.hydrated {
+    background: none !important;
+    --background: none !important;
+}
+
+ion-content.md.hydrated {
+    height: 100vh;
+    background: none !important;
+    --background: none !important;
+}
+.sidebar{
+    --background: auto;
+    // background: linear-gradient(to right, #e6cd1d 27%, #0032ea 97%);
+    background:  linear-gradient(to top left, #0032ea 30%, #e6cd1d 70%);
+    padding: 50px 0px 0px 20px;
+}
+ion-list.md.list-md.hydrated {
+    background: none;
+}
+ion-toolbar.drover_header.in-toolbar.md.toolbar-title-default.hydrated {
+    background: none;
+}
+
+ion-title.dashobard_title.md.title-default.hydrated {
+   // margin-right: 10%;
+}
+
+
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    --highlight-color-focused: none !important;
+    }
+    
+    app-sidebar.sidebar_menu {
+    z-index: 9999 !important;
+    }
+    ion-tabs {
+    top: 78px !important;
+    }
+    ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated:focus {
+    outline: none !important;
+    }
+    img.ada_img {
+    height: 150px;
+    object-fit: cover;
+    }
+
+    .profile_image{
+        height: 50px;
+        margin-top: 10px;
+    }

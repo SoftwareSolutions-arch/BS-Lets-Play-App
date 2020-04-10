@@ -1,0 +1,67 @@
+
+ion-toolbar.in-toolbar.md.toolbar-title-default.hydrated {
+    // / width: 100px; /
+    // / padding-bottom: 13px; /
+    padding: 11px 0px;
+    --background: auto;
+    background: linear-gradient(to right, #e6cd1d 27%, #0032ea 97%); 
+    // / display: block; /
+    // / margin: 0px auto 32px; /
+    // / border-radius: 8px; /
+    }
+    
+    
+    .header-md:after{
+    display: none !important;
+    }
+    ion-content.dashboard.md.hydrated {
+    --background: auto;
+    background: linear-gradient(to bottom, #0012ff, rgba(183, 197, 252, 0.27));
+    }
+
+    ion-title.dashobard_title.md.title-default.hydrated {
+    color: #fff;
+    font-weight: 18px !important;
+    margin-left: 14%;
+    width: auto;
+    font-weight: bold;
+    }
+   
+    ion-button{
+        padding: 0px;
+        block-size: 50px;
+        --border-radius: 40px;
+        // background:linear-gradient(to bottom, #0032ea 0%, #e9da6c 100%);
+        overflow: hidden;
+
+    }
+
+    .button_home {
+        // margin-top: 30%;
+        width: 88px;
+        height: 88px;
+        background:linear-gradient(to bottom, #0032ea 0%, #e9da6c 100%);
+        display: block;
+        margin: 0px auto 32px;
+        border-radius: 8px;
+        margin-top: 5%;
+
+      }
+
+      ion-button.button_forget.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+        --background: none;
+        overflow: hidden;
+        }
+
+        .forgetbtn {
+            overflow: hidden !important;
+            margin-left: 30%;
+            margin-right: 30%;
+            // height: 40px;
+            // text-align: center;
+            margin-top: 20%;
+            border-radius: 67px;
+            background: linear-gradient(to , #0032ea 0%, #e9da6c 100%)!important;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0032ea), to(#e9da6c));
+            background: linear-gradient(to right, #0032ea -12% , #fadf01d6 82%);
+            }

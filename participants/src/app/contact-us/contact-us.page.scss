@@ -1,0 +1,196 @@
+
+    .lg-head{
+        color: #ff7300 !important;
+    }
+
+    .span {
+        color: #868686 !important;
+        font-weight: 600;
+    }
+
+    .hr {
+        width: 125px;
+        height: 2px;
+        background-color: #00b6c1 !important;
+        border: 0;
+        margin: 7px 0 15px 0;
+    }
+    .container {
+        background-color: #f6f6f6 !important; 
+    }
+
+    .scroll-content {
+        background-color: #f6f6f6 !important;
+    }
+
+    .card-signin .card-title {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #ff7300;
+        margin-bottom: 5px;
+    }
+
+    .card-signin .card-body {
+        padding: 2rem;
+        box-shadow: 0 0px 8px rgba(153, 153, 153, 0.1);
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+
+    // .h6 {
+    //     color: black !important;
+    // }
+
+    p {
+        color: black;
+    }
+
+    .list-inline {
+        padding-left: 0;
+        display: inline-flex;
+        list-style: none;
+    }
+    
+    .fa-search-plus:before {
+        margin: 10px;
+    }
+
+    .fa-user-md:before {
+     
+        margin: 10px;
+    }
+
+    .fa-bus:before {
+       
+        margin: 10px;
+    }
+
+    .fa-location-arrow:before {
+        margin: 10px;
+    }
+
+    .fa-phone-alt:before {
+        margin: 10px;
+    }
+
+    .fa-envelope-open:before {
+        margin: 10px;
+    }
+    .datagram{
+        color: #ffffff !important;
+        font-size: 16px !important;
+        margin-right: 6px !important;
+        background: #00b6c1;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    p {
+        color: black;
+        display: inherit;
+    }
+    .about h1 {
+        font-size: 20px;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    
+    .text-center {
+        text-align: center!important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    
+    p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .about p {
+        font-size: 13px;
+        line-height: 20px;
+        color: #000;
+        text-align: justify;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    
+    img {
+        width: 15px;
+    }
+    
+    
+    
+    .notification_icon {
+        width: 10%;
+        float: left;
+        margin: 0px;
+    }
+    .user_details {
+        width: 70%;
+        float: left;
+        margin: 0px;
+        padding-left: 20px;
+    }
+    .user_details .sc-ion-label-md-h{
+        font-size: 13px;
+    }   
+    
+    .delete_icon {
+        float: left;
+        width: 20%;
+        margin: 0px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .notification_icon .md.hydrated, .delete_icon .md.hydrated{
+        width: 20px;
+        display: block;
+        margin: auto;
+    }
+    .delete_icon p {
+        font-size: 10px;
+        text-align: center;
+        color: #797878;
+    }
+    
+    
+    .in-toolbar.toolbar-title-default.hydrated {
+        padding: 11px 0px;
+        --background: auto;
+        background: url('../../assets/Icons/Shape_11.png'); 
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+        
+        ion-content.dashboard.hydrated {
+        --background: auto;
+        background: linear-gradient(to bottom, #0012ff, rgba(183, 197, 252, 0.27));
+    
+        }
+    
+        ion-title.dashobard_title.md.title-default.hydrated {
+        color: #fff;
+        font-weight: 18px !important;
+        margin-left: 14%;
+        width: auto;
+        font-weight: bold;
+        }

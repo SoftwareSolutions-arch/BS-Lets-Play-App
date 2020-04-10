@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button auto-hide="false">
+          <img src="././assets/Icons/ic_menu.png">
+        </ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="dashobard_title">Home</ion-title>
+    <ion-img slot="end" class="discover_imgsetting_icon"
+      src="../../assets/Icons/Icon ionic-ios-notifications-outline.png" [routerLink]="['/notification']"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="dashboard">
+  <div class="imge_box">
+    <ion-card *ngFor="let item of this.AllProductsHomePage">
+      <!-- <ion-card-content class="image_dash" style="padding: 8px !important;" [routerLink]="['/activity-detail']"> -->
+        <ion-card-content class="image_dash" style="padding: 8px !important;" >
+        <img class="image_data" (click)="joinactivitybyid(item)" src="http://alphawizz.com/bsletsplay/{{item.photo}}" >
+        <span class="arrow">
+          <h2 class="price">{{item.price}}</h2>
+        </span>
+        <div class="card-title">{{item.activity_name}}</div>
+        <div class="card-subtitle">
+          <img class="icon_cal" src="../../assets/Icons/ic_calendar.png">
+          <a class="date"> {{item.start_datetime}} <label class="to">to</label>{{item.end_datetime}} </a>
+        </div>
+        <div class="card-subtitle">
+          <img class="place" src="../../assets/Icons/ic_location.png">
+          <a class="location_title">{{item.location}}</a>
+        </div>
+        <div class="right_box-imagedata">
+          <img class="edit" (click)="getactivitybyid(item)" src="../../assets/Icons/ic_edit.png">
+          <img class="delete" (click)="deleteactivity(item)" src="../../assets/Icons/ic_delete_blue.png">
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ion-footer>
+    <ion-toolbar>
+      <div class="discover_img first-img">
+        <ion-img class="discover_imgsearch" src="../../assets/Icons/ic_search_blue.png"></ion-img>
+        <ion-label>Search</ion-label>
+      </div>
+      <div class="discover_img second_img" [routerLink]="['/message']">
+        <ion-img class="discover_imgmail" src="../../assets/Icons/mesage.png"></ion-img>
+        <ion-label>Message</ion-label>
+      </div>
+      <div class="discover_img third_img" [routerLink]="['/setting']">
+        <!-- <div class="discover_img third_img"> -->
+        <ion-img class="discover_imgsetting" src="../../assets/Icons/ic_setting_blue.png"></ion-img>
+        <ion-label>Setting</ion-label>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

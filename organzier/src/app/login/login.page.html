@@ -1,0 +1,56 @@
+<ion-content class="inner_containter">
+  <div class="ion-padding">
+    <div class="button_home"></div>
+    <p class="logitxt"><b>LOGIN</b></p>
+    <form #myForm="ngForm">
+      <ion-item class="myinputcc" no-lines>
+        <ion-img class="mailwidth" src="/assets/Icons/ic_mail.png"></ion-img>
+        <ion-input (click)="emailclick()" placeholder="Email" type="email" id="email" [(ngModel)]="users.email" name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required #email="ngModel"></ion-input>
+      </ion-item>
+
+      <div *ngIf="emailvaild">
+      <span *ngIf="email.errors">
+        <span [hidden]="!email.errors.required">
+          <ion-label style="color: red; margin-left: 16px;">*Email is required </ion-label>
+        </span>
+        <span [hidden]="!email.errors.pattern">
+          <ion-label style="color: red; margin-left: 16px;">*Please enter a valid email </ion-label>
+        </span>
+      </span>
+      </div>
+    
+      <ion-item class="myinputcc" no-lines>
+        <ion-img class="mailwidth" src="/assets/Icons/ic_pwd.png"></ion-img>
+        <ion-input (click)="passwordclick()" type="password" placeholder="Password" id="password" [(ngModel)]="users.password" name="password"
+          required #password="ngModel"></ion-input>
+        <p *ngIf="loginForm.controls['password'].errors && loginForm.controls['password'].dirty" class="danger" padding>
+      </ion-item>
+
+      <div *ngIf="passwordvaild">
+      <span *ngIf="password.errors">
+        <span [hidden]="!password.errors.required">
+          <ion-label style="color: red; margin-left: 16px;">*Password is required </ion-label>
+        </span>
+      
+      </span>
+      </div>
+
+      <div class="forget_password">
+        <p style="text-align: right;margin-right: 20px;" [routerLink]="['/forgot-password']">Forgot Password?</p>
+      </div>
+      <div class="forgetbtn">
+        <button   ion-button class="new_btn" (click)="onSignIn()" type="submit">
+          Sign In
+        </button>
+      </div>
+      <p style="text-align: center;margin-top: 10;">Or Continue with</p>
+      <div class="row social_icn">
+        <ion-img (click)="googleLogin()" src="/assets/Icons/ic_google.png"></ion-img>
+        <ion-img (click)="fbLogin()" src="/assets/Icons/ic_facebook.png"></ion-img>
+      </div>
+      <p class="dont_have_txt" style="text-align: center;">Don't have an account?</p>
+      <p style="text-align: center;color: blue;" [routerLink]="['/registration']">Sign Up here</p>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,117 @@
+<app-sidebar class="sidebar_menu"></app-sidebar>
+<ion-header class="browse_header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button auto-hide="false">
+          <img src="././assets/Icons/ic_menu.png">
+        </ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+   
+    <ion-title class="dashobard_title browse">Browse</ion-title>
+    <div class="right_icon">
+      <ion-button auto-hide="false" class="ic_filter_button" (click)="SearchFilter()">
+        <img class="image_filter" src="././assets/Icons/ic_search_white.png">
+      </ion-button>
+<!--      <ion-button auto-hide="false" data-toggle="modal" data-target="#myModal" (click)="data()" class="ic_filter_button">-->
+      <ion-button auto-hide="false" data-toggle="modal" (click)="sortFilter()" class="ic_filter_button">
+        <img class="image_filter" src="././assets/Icons/ic_filter.png">
+      </ion-button>
+    </div>
+    <ion-searchbar [hidden]=ishidden (ionInput)="searchActivity($event)" (ionCancel)="cancelSearch()" class="searchmenu">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="dashboard">
+  <ion-virtual-scroll></ion-virtual-scroll>
+  <ion-card class="place">
+    <div class="location_img">
+      <ion-img src="../../assets/Icons/pin.png"></ion-img>
+    </div>
+    <div class="dashboar_title">
+      <!-- <ion-title class="dashobard_title">Newyork</ion-title> -->
+      <div>
+        <ion-input class='auto-location' placeholder="Enter Location" [(ngModel)]='headerLocation' (input)='onChangeLocation($event.target.value)'></ion-input>
+      </div>
+    </div>
+    <div class="location-option" *ngFor="let item of this.autocompleteItemsSearch" tappable (click)="chooseItemSource(item)">
+      <div>{{item.description}}</div>
+    </div>
+    <div class="change_btn">
+      <ion-button class="changebtn" (click)='searchByLocation(headerLocation)'>{{headerLocation !== '' ? 'Done' : 'Change'}}</ion-button>
+    </div>
+  </ion-card>
+  <ion-content class="dashboard">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#ListView">List View</a></li>
+      <li><a data-toggle="tab" href="#Map">Map</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="ListView" class="tab-pane fade in active">
+        <div class="imge_box">
+          <ion-card *ngFor="let item of this.AllProductsHomePage">
+            <!-- <ion-card-content class="image_dash" style="padding: 8px !important;" [routerLink]="['/activity-detail']"> -->
+              <ion-card-content class="image_dash" style="padding: 8px !important;" >
+              <img class="image_data" src="http://alphawizz.com/bsletsplay/{{item.photo}}">
+              <span class="arrow">
+                <h2 class="price">{{item.price}}</h2>
+              </span>
+              <div class="card-title">{{item.activity_name}}</div>
+              <div class="card-subtitle">
+                <img class="icon_cal" src="../../assets/Icons/ic_calendar.png">
+                <a class="date"> {{item.start_datetime}} <label class="to">to</label>{{item.end_datetime}} </a>
+              </div>
+              <div class="card-subtitle">
+                <img class="place" src="../../assets/Icons/ic_location.png">
+                <a class="location_title">{{item.location}}</a>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+      <div id="Map" class="tab-pane fade">
+        <div #map id="map" style="width: 500;height: 500;"></div>
+      </div>
+    </div>
+    <ion-footer>
+      <ion-toolbar>
+        <div class="discover_img">
+          <ion-img class="discover_imgsearch" src="../../assets/Icons/ic_search_blue.png"></ion-img>
+          <ion-label>Search</ion-label>
+        </div>
+        <div class="discover_img" [routerLink]="['/message']">
+          <ion-img class="discover_imgmail" src="../../assets/Icons/mesage.png"></ion-img>
+          <ion-label>Message</ion-label>
+        </div>
+        <div class="discover_img" [routerLink]="['/setting']">
+          <ion-img class="discover_imgsetting" src="../../assets/Icons/ic_setting_blue.png"></ion-img>
+          <ion-label>Setting</ion-label>
+        </div>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-content>
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sort By</h4>
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        </div>
+
+        <!-- Modal body -->
+        <!-- <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime> -->
+        <ion-datetime  value="1990/02/19" displayFormat="MM/DD/YYYY" pickerFormat="MM DD YYYY "></ion-datetime>
+
+        
+        <div class="modal-body">
+          Nearest
+        </div>
+ </div>
+    </div>
+  </div>
+  <!-- Footer without a border -->
+</ion-content>

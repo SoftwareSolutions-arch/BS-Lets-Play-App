@@ -1,0 +1,335 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200325.153207.9428.0.001.json",
+    "dumpEventTime": "2020-03-25T15:32:08Z",
+    "dumpEventTimeStamp": "1585130528499",
+    "processId": 9428,
+    "cwd": "C:\\Users\\umang\\OneDrive\\Desktop\\newcode-master\\newcode-master\\participants",
+    "commandLine": [
+      "node",
+      "C:\\Users\\umang\\OneDrive\\Desktop\\newcode-master\\newcode-master\\participants\\node_modules\\.bin\\\\..\\@angular\\cli\\bin\\ng",
+      "run",
+      "app:serve",
+      "--host=localhost",
+      "--port=8101"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 2661515,
+        "nice": 0,
+        "sys": 1695703,
+        "idle": 5602000,
+        "irq": 129718
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 2430140,
+        "nice": 0,
+        "sys": 1437250,
+        "idle": 6091609,
+        "irq": 65562
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 2998281,
+        "nice": 0,
+        "sys": 1548671,
+        "idle": 5412046,
+        "irq": 51828
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 2400,
+        "user": 2824750,
+        "nice": 0,
+        "sys": 1406515,
+        "idle": 5727734,
+        "irq": 45093
+      }
+    ],
+    "host": "DESKTOP-OTEO4P8"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6733c19f9",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6733c5e1c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6733c4dd8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6734c34cb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673cd9f4e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673cc2021",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673b8e57c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673b96521",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673b8bb13",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673b8a184",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673bab36d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff673910c51",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff674124ddd",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6740a9543",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000003ad15446cc3",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 9420800,
+    "totalCommittedMemory": 9420800,
+    "usedMemory": 8352800,
+    "availableMemory": 2189603008,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047456,
+        "used": 1047440,
+        "available": 16
+      },
+      "old_space": {
+        "memorySize": 6438912,
+        "committedMemory": 6438912,
+        "capacity": 6303784,
+        "used": 6142744,
+        "available": 161040
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 189408,
+        "used": 189408,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 790528,
+        "capacity": 544320,
+        "used": 544320,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 401408,
+        "committedMemory": 401408,
+        "capacity": 393296,
+        "used": 393296,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 0.796,
+    "kernelCpuSeconds": 0.328,
+    "cpuConsumptionPercent": 3.5125,
+    "maxRss": 26939392,
+    "pageFaults": {
+      "IORequired": 12349,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 390,
+      "writes": 97
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\umang\\OneDrive\\Desktop\\newcode-master\\newcode-master\\participants",
+    "allusersprofile": "C:\\ProgramData",
+    "appdata": "C:\\Users\\umang\\AppData\\Roaming",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "chocolateyinstall": "C:\\ProgramData\\chocolatey",
+    "chocolateylastpathupdate": "132283424851608381",
+    "commonprogramfiles": "C:\\Program Files\\Common Files",
+    "commonprogramfiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "commonprogramw6432": "C:\\Program Files\\Common Files",
+    "computername": "DESKTOP-OTEO4P8",
+    "comspec": "C:\\Windows\\system32\\cmd.exe",
+    "dp0": "C:\\Users\\umang\\OneDrive\\Desktop\\newcode-master\\newcode-master\\participants\\node_modules\\.bin\\",
+    "driverdata": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "force_color": "1",
+    "fps_browser_app_profile_string": "Internet Explorer",
+    "fps_browser_user_profile_string": "Default",
+    "google_api_key": "no",
+    "google_default_client_id": "no",
+    "google_default_client_secret": "no",
+    "homedrive": "C:",
+    "homepath": "\\Users\\umang",
+    "ionic_cli_bin": "C:\\Users\\umang\\AppData\\Roaming\\npm\\node_modules\\@ionic\\cli\\bin\\ionic",
+    "ionic_cli_lib": "C:\\Users\\umang\\AppData\\Roaming\\npm\\node_modules\\@ionic\\cli",
+    "ionic_cli_local_error": "LOCAL_CLI_NOT_FOUND",
+    "localappdata": "C:\\Users\\umang\\AppData\\Local",
+    "logonserver": "\\\\DESKTOP-OTEO4P8",
+    "number_of_processors": "4",
+    "onedrive": "C:\\Users\\umang\\OneDrive",
+    "onedriveconsumer": "C:\\Users\\umang\\OneDrive",
+    "os": "Windows_NT",
+    "path": "C:\\Users\\umang\\OneDrive\\Desktop\\newcode-master\\newcode-master\\participants\\node_modules\\.bin;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;F:\\vscode\\Microsoft VS Code\\bin;C:\\Users\\umang\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\umang\\AppData\\Roaming\\npm",
+    "pathext": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "processor_architecture": "AMD64",
+    "processor_identifier": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel",
+    "processor_level": "6",
+    "processor_revision": "4e03",
+    "programdata": "C:\\ProgramData",
+    "programfiles": "C:\\Program Files",
+    "programfiles(x86)": "C:\\Program Files (x86)",
+    "programw6432": "C:\\Program Files",
+    "prompt": "$P$G",
+    "psmodulepath": "%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "public": "C:\\Users\\Public",
+    "sessionname": "Console",
+    "systemdrive": "C:",
+    "systemroot": "C:\\Windows",
+    "temp": "C:\\Users\\umang\\AppData\\Local\\Temp",
+    "tmp": "C:\\Users\\umang\\AppData\\Local\\Temp",
+    "userdomain": "DESKTOP-OTEO4P8",
+    "userdomain_roamingprofile": "DESKTOP-OTEO4P8",
+    "username": "umang",
+    "userprofile": "C:\\Users\\umang",
+    "windir": "C:\\Windows",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\UMPDC.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll"
+  ]
+}

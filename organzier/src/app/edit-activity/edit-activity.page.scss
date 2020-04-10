@@ -1,0 +1,346 @@
+ion-toolbar.activty_detail {
+    padding: 6px 0px;
+    --background: auto;
+    background: linear-gradient(127deg, #e6cd1d 24%, #0032E9 83%, #1531f7 1%);
+    color: #fff;
+  }
+  
+  img.user_img {
+    width: 41px;
+    margin-right: 11px;
+  }
+  
+  ion-content.activity_backogrund.md.hydrated {
+    --background: auto;
+    background: #cfcfcf;
+    background: linear-gradient(to bottom, #c7c7c7 23%, #ffffff 97%);
+  }
+  
+  ion-card.formbox.md.hydrated {
+    display: inline-block;
+    width: 95%;
+    // height: 100%;
+    background: #fff;
+    padding-top: 10px;
+    box-shadow: 0px 5px 5px 5px #b5b5b5;
+  }
+  
+  .description {
+    padding: 11px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  ion-label.descriptionBox.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    padding-left: 26px;
+    font-size: larger;
+    font-weight: 600;
+  }
+  
+  .row_design ion-label.add_title.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    float: left;
+  }
+  
+  .row_design {
+    font-weight: 600;
+    padding: 1px 5px 57px;
+    min-height: 45px;
+    margin: 1px solid #000;
+    font-size: initial;
+    font-weight: inherit;
+  }
+  
+  .row_design ion-label.add_title.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    float: left;
+    color: black;
+    width: 40%;
+    font-size: 13px;
+    font-weight: lighter;
+  
+  }
+  
+  ion-buttons.add_box.sc-ion-buttons-md-h.sc-ion-buttons-md-s.md.hydrated {
+    float: right;
+    margin-top: -3px;
+    border: 1px solid black;
+    width: 46%;
+    border-radius: 11px;
+  }
+  
+  .input_box {
+    float: right;
+    width: 55%;
+    height: 38px;
+    border: 1px solid #adadad94;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  ion-input.add_box.sc-ion-input-md-h.sc-ion-input-md-s.md.hydrated.has-value {
+    text-align: left;
+   
+  }
+  
+  ion-select.selectbox.md.hydrated {
+    color: #000;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    background-image: url('../../assets/Icons/ic_drop_down.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 99% 9px;
+      width: 100% !important;
+      max-width: inherit !important;
+  }
+  
+  .row_btn1 {
+    width: 75%;
+    border-radius: 26px;
+    --background: auto;
+    background: linear-gradient(to right, #b5a40d 14%, #0012ff);
+    padding: 0px 0px 1px;
+    margin: 4px 8px;
+    float: left;
+  }
+  
+  .row_btn2 {
+    width: 72%;
+    border-radius: 26px;
+    --background: auto;
+    background: linear-gradient(to right, #b5a40d 14%, #0012ff);
+    padding: 0px 0px 1px;
+    margin: 4px 4px;
+    float: right;
+  }
+  
+  .row_btn1 ion-button.edit_txt.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    background: transparent !important;
+    display: block;
+    --background: none;
+    box-shadow: none !important;
+    --box-shadow: none !important;
+  }
+  
+  .row_btn2 ion-button.edit_txt.md.button.button-solid.ion-activatable.ion-focusable.hydrated[_ngcontent-jdx-c1] {
+    background: transparent !important;
+    display: block;
+    --background: none;
+    box-shadow: none !important;
+    --box-shadow: none !important;
+  }
+  
+  ion-button.edit_txt.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    background: transparent !important;
+    display: block;
+    --background: none;
+    box-shadow: none !important;
+    --box-shadow: none !important;
+  }
+  
+  .alert-radio-icon.sc-ion-alert-md {
+    display: contents !important;
+  }
+  
+  ion-toggle.md.interactive.hydrated {
+    float: right;
+  }
+  
+  .row_design_photo {
+    font-weight: 600;
+    /* padding: 1px 5px 57px; */
+    min-height: 45px;
+    margin: 1px solid #000;
+    font-size: initial;
+    /* font-weight: inherit; */
+    padding-bottom: 20p;
+    margin-bottom: 36px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #000;
+    margin-top: 26px;
+  }
+  
+  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+  @import url("https://fonts.googleapis.com/css?family=Roboto");
+  
+  html,
+  body,
+  * {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    text-align: center;
+  }
+  
+  body {
+    padding: 2rem;
+    background: #f8f8f8;
+  }
+  
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    color: #454cad;
+    margin-bottom: 0;
+  }
+  
+  button .alert-button-inner {
+    display: none !important;
+  }
+  
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #5f6982;
+  }
+  
+  .uploader {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .uploader label {
+    float: left;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .uploader label.hover #start i.fa {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  
+  .uploader #start {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  
+  .uploader #start.hidden {
+    display: none;
+  }
+  
+  .uploader #response {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  
+  .uploader #response.hidden {
+    display: none;
+  }
+  
+  .uploader #response #messages {
+    margin-bottom: .5rem;
+  }
+  
+  .uploader #file-image {
+    display: inline !important;
+    margin: 2px auto 0.5rem auto;
+    width: 95%;
+    height: auto;
+    max-width: 180px;
+    float: right;
+    padding: 6px;
+    height: 44px;
+  }
+  
+  .uploader #file-image.hidden {
+    display: none;
+  }
+  
+  .uploader #notimage {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  
+  .uploader #notimage.hidden {
+    display: none;
+  }
+  
+  .uploader progress,
+  .uploader .progress {
+    display: inline;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 180px;
+    height: 8px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #eee;
+    overflow: hidden;
+  }
+  
+  .uploader input[type="file"] {
+    display: none;
+  }
+  
+  ion-label.add_title.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    width: 40%;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+  }
+  
+  ion-textarea.ion_text.sc-ion-textarea-md-h,
+  textarea.native-textarea.sc-ion-textarea-md {
+    height: 50px;
+    margin: 0px;
+  }
+  
+  .input_box.txtarea {
+    height: 50px;
+    text-align: left !important;
+    padding: 3px 10px;
+  }
+  
+  input.native-input.sc-ion-input-md {
+    padding: 3px 10px;
+    text-align: left !important;
+  }
+  
+  .textarea_box {
+    height: 50px;
+  }
+  
+  .datagram {
+    width: 32%;
+    float: left;
+    margin-left: 8px;
+  }
+  
+    ion-card.skill_label.md.hydrated {
+      height: 49px;
+      clear: both !important;
+  }
+  .datetime{
+    // padding-bottom: 15px !important;
+  }
+  .bottomSpace{
+    // padding-bottom: 10px;
+    // margin-bottom: 10px;
+    // height: 30px;
+  
+  }
+  .input_box ion-datetime.datetime.ng-untouched, input.native-input {
+    padding-top: 6px !important;
+  }
+  
+  .input_box input.native-input {
+    padding-top: 6px !important;
+  }
+  

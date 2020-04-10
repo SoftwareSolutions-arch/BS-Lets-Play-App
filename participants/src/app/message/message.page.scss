@@ -1,0 +1,40 @@
+ion-toolbar.activty_detail{
+    padding: 11px 0px;
+    --background: auto;
+    background: linear-gradient(127deg, #e6cd1d 24%, #0032E9 83%, #1531f7 1%);
+    color: #fff !important;
+    }
+
+    .card-title ion-img.card_img_1.md.hydrated {
+        position: absolute;
+        top: 11px;
+        right: 17px;
+        width: 5%;
+    }
+
+    .card-title ion-img.card_img_2.md.hydrated {
+        position: absolute;
+        top: 11px;
+        right: 57px;
+        width: 5%;
+    }
+    ion-toolbar.in-toolbar.md.hydrated.toolbar-interactive.toolbar-input.toolbar-has-placeholder {
+        height: 42px;
+    }
+ 
+    .card-title ion-input.sc-ion-input-md-h.sc-ion-input-md-s.md.hydrated {
+        padding: 0px !important;
+        margin-top: -18px;
+    }
+
+    ion-back-button.back-button-has-icon-only{
+        display: block;
+    }
+    .img_icon_button{
+        width: 70%;
+    }
+
+    .data_img1{
+        width: 65%;
+        margin: 0;
+    }

@@ -1,0 +1,173 @@
+.containter {
+    background: linear-gradient(to bottom, #0032ea 0%, white 62%);
+    background-size: 100%;
+    --background: none;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-attachment: fixed;
+}
+
+.error-message {
+    color: var(--ion-color-danger);
+}
+
+.card-title {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 31%;
+}
+
+ion-button {
+    padding: 0px;
+    block-size: 50px;
+    --border-radius: 40px;
+    overflow: hidden;
+}
+
+.button_home {
+    width: 80px;
+    height: 70px;
+    background: linear-gradient(to bottom, #3036fe 4%, #ebd117 81%);
+    display: block;
+    margin: 0px auto 2px;
+    border-radius: 8px;
+    margin-top: 0%;
+}
+
+ion-button.button_forget {
+    // / width: 100px; /
+    height: 58px;
+    --background: none;
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(#0032ea),
+            to(#e9da6c));
+    background: linear-gradient(to, #0032ea 0%, #e9da6c 100%);
+
+    border-radius: 67px;
+    overflow: hidden;
+}
+
+.forgetbtn ion-button.button_forget {
+    background: linear-gradient(to right, #0032ea 16%, #ebd117 82%);
+    height: 6vh;
+
+}
+
+p.singuptxt {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+ion-img.mail_img {
+    width: 21px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 0px 0px 2px;
+}
+
+ion-input.mail_img {
+    font-size: 14px;
+    color: #000000c9;
+    border-radius: 43px;
+}
+
+ion-img.mailwidth {
+    // margin-left: 7px !important;
+    margin-right: 10px;
+}
+
+ion-checkbox.checkboxagree {
+    background: #000;
+}
+
+ion-img.mailwidth.usr_skl {
+    width: 22px !important;
+    margin-top: 10px;
+    float: left;
+}
+
+ion-select.selectbox {
+    background-image: url('../../assets/Icons/ic_drop_down.png');
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: right;
+    color: #000;
+    padding: 0 !important;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.forgetbtn {
+    padding-bottom: 0px;
+}
+
+.social_icn ion-img {
+    width: 35px;
+    display: inline-block;
+    margin: 0px 11px 5px;
+}
+
+.social_icn {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.ion-label#ion-sel-0-lbl {
+    color: #989898 !important;
+}
+
+p {
+    margin: 0 0 0px !important;
+    padding-top: 0px !important;
+}
+
+.list-md {
+
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+ion-card.skill_label {
+    height: 7vh;
+}
+
+.skill_level {
+    color: #a5a2a2 !important;
+    font-size: 15px !important;
+}
+
+ion-card {
+    padding: 3px;
+    margin: 10px 5px;
+}
+
+.mailwidth {
+    width: 13px !important;
+
+}
+ion-img.mailwidth.usr_skl.md.hydrated {
+    margin-left: 16px;
+    margin-right: 0px;
+}
+
+.validate {
+    margin-left: 15px;
+    font-size: 18px;
+    color: red;
+  }
+
+  ion-card.skill_label.md.hydrated {
+    height: 49px;
+    clear: both !important;
+}
+
+.error-message {
+    margin-left: 10px;
+}

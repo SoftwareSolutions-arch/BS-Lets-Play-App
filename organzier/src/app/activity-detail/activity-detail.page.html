@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <a class="backbtn_img" [routerLink]="['/dashboard']"><img class="datagram"
+          src="../../assets/Icons/back_white.png"></a>
+      <!-- <ion-back-button text="" [routerLink]="['/dashboard']" defaultHref="dashboad" styl></ion-back-button> -->
+    </ion-buttons>
+    <ion-buttons slot="end" [routerLink]="['/listparticipants']">
+      <img class="user_img" src="../../assets/Icons/ic_users.png">
+    </ion-buttons>
+
+    <ion-title class="header_title">Activity Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="detail_backgorund" *ngFor="let item of this.AllProductsHomePage">
+  <div class="imge_box">
+    <ion-card class="box_img">
+      <ion-card-content class="image_dash">
+        <img class="image_data" src="https://alphawizz.com/bsletsplay/{{item.photo}}">
+        <span class="arrow">
+          <h2 class="price">{{item.price}}</h2>
+        </span>
+        <div class="main_box">
+          <div class="calender_box">
+            <img class="icon_cal" src="../../assets/Icons/ic_calendar.png">
+            <a class="date">{{item.start_datetime}} <label class="to">to</label>{{item.end_datetime}}</a>
+          </div>
+          <ion-title class="padding"><strong> {{item.activity_name}}</strong>
+            <img (click)="someAction()" class="edit_icon" src="../../assets/Icons/ic_share.png">
+          </ion-title>
+          <div class="loc">
+            <img class="place" src="../../assets/Icons/ic_location.png">
+            <a class="location_title"> {{item.location}}
+              <img class="edit_icon" src="../../assets/Icons/ic_chat.png">
+            </a>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-label class="descriptionBox">
+    Description
+  </ion-label>
+  <div class="description">
+    <p class="detailtxt"> {{item.activity_details}}</p>
+    <div class="row_design">
+      <ion-label class="number_title">Total Spots </ion-label>
+
+      <!-- <ion-button class="bttn_num">6</ion-button>' -->
+      <ion-input class="number_box" readonly>{{item.total_spots}}</ion-input>
+
+    </div>
+    <div class="row_design">
+      <ion-label class="number_title">Free Spots </ion-label>
+
+      <ion-input class="number_box" readonly>{{item.free_spots}}</ion-input>
+
+    </div>
+    <div class="row_design">
+      <ion-label class="number_title">Start Time </ion-label>
+      <div class="number_box" value="11:00 AM">
+        <div class="abc">{{item.start_datetime}}</div>
+      </div>
+
+    </div>
+    <div class="row_design">
+      <ion-label class="number_title">End Time </ion-label>
+      <div class="number_box" value="11:00 AM">
+        <div class="abc">{{item.end_datetime}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="row_btn1">
+    <ion-button class="edit_txt" [routerLink]="['/activity-join']">Withdraw</ion-button>
+  </div>
+</ion-content>

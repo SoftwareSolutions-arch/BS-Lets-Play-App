@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button [routerLink]="['/dashboard']" auto-hide="false">
+          <img src="././assets/Icons/ic_back.png">
+        </ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="dashobard_title">Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 tuch my-auto">
+        <div class="social-icon mt-2 mt-md-4">
+          <ul class="social list-inline">
+            <li><a class="f-book" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card card-signin  my-3">
+          <div class="card-body">
+            <h5 class="card-title">Contact Us</h5>
+            <h6>Get in touch with us by filling the details below</h6>
+            <hr>
+            <div class=" ">
+              <form method="POST" action="https://indimedo.com/send/contact" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="rjXgosfFm2taTCGiPMKPFEaqwchF9nprjRLA6Mj0">
+                <div class="form-signin">
+                  <!-- <div class="row"> -->
+                   <div class="form-group">
+                      <label for="name"> Name </label>
+                      <input type="name" id="name" name="name" class="form-control" placeholder="Enter Your Name..."
+                        required="">
+                    </div>
+                   <div class="form-group">
+                      <label for="email"> Email </label>
+                      <input type="email" id="email" name="email" class="form-control"
+                        placeholder="Enter Your Email address..." required="">
+                    </div>
+                  <!-- </div> -->
+                  <div class="form-group">
+                    <label for="number"> Phone </label>
+                    <input type="name" id="number" name="number" class="form-control"
+                      placeholder="Enter Your Phone Number..." required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="query">Write your query</label>
+                    <textarea class="form-control" id="query" name="desc" placeholder="Write your query..." rows="4"
+                      required=""></textarea>
+                  </div>
+                  <button class="btn d-block w-100 btn-lg btn-primary log_btn">Submit</button>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

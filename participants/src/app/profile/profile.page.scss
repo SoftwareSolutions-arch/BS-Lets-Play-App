@@ -1,0 +1,226 @@
+
+
+.notification_icon {
+    width: 10%;
+    float: left;
+    margin: 0px;
+}
+.user_details {
+    width: 70%;
+    float: left;
+    margin: 0px;
+    padding-left: 20px;
+}
+.user_details .sc-ion-label-md-h{
+    font-size: 13px;
+}   
+
+.delete_icon {
+    float: left;
+    width: 20%;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.notification_icon .md.hydrated, .delete_icon .md.hydrated{
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+.delete_icon p {
+    font-size: 10px;
+    text-align: center;
+    color: #797878;
+}
+
+
+.in-toolbar.toolbar-title-default.hydrated {
+    padding: 11px 0px;
+    --background: auto;
+    background: url('../../assets/Icons/Shape_11.png'); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+  
+    
+    // .header-md:after{
+    // display: none !important;
+    // }
+    
+    ion-content.dashboard.hydrated {
+    --background: auto;
+    background: linear-gradient(to bottom, #0012ff, rgba(183, 197, 252, 0.27));
+
+    }
+
+    ion-title.dashobard_title.md.title-default.hydrated {
+    color: #fff;
+    font-weight: 18px !important;
+    margin-left: 14%;
+    width: auto;
+    font-weight: bold;
+    }
+   
+.profile_des {
+    float: left;
+    width: 80%;
+    padding: 10px 20px;
+}
+ion-avatar.md.hydrated {
+    width: 20%;
+    float: left;
+}
+.profile_des span {
+    display: block;
+    color: #fff;
+}
+.profile_des p {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    margin: 0px;
+}
+
+ion-item.item.md.in-list.ion-focusable.item-label.hydrated {
+    background: none !important;
+    --background: none !important;
+}
+
+// ion-content.md.hydrated {
+//     height: 100vh;
+//     background: none !important;
+//     --background: none !important;
+// }
+.sidebar{
+    --background: auto;
+    // background: linear-gradient(to right, #e6cd1d 27%, #0032ea 97%);
+    background:  linear-gradient(to top left, #0032ea 30%, #e6cd1d 70%);
+    padding: 50px 0px 0px 20px;
+}
+ion-list.md.list-md.hydrated {
+    background: none;
+}
+ion-toolbar.drover_header.in-toolbar.md.toolbar-title-default.hydrated {
+    background: none;
+}
+
+ion-title.dashobard_title.md.title-default.hydrated{
+    text-align: center;
+    margin: 8px 0px 0px 0px;
+}
+
+ion-list.md.list-md.hydrated {
+    margin-top: 10px !important; 
+}
+
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    --highlight-color-focused: none !important;
+    }
+    
+    app-sidebar.sidebar_menu {
+     z-index: 9999 !important;
+}
+ion-tabs {
+    top: 78px !important;
+}
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated:focus {
+    outline: none !important;
+}
+img.ada_img {
+    height: 150px;
+    object-fit: cover;
+}
+
+ion-img.mailwidth.profile_img.hydrated{
+    width: 92px;
+    height: 92px;
+    border: 1px solid #fff;
+    border-radius: 50% !important;
+    overflow: hidden;
+    margin: 39px auto;
+}
+
+ion-img.mailwidth.camera_img.hydrated {
+    width: 31px;
+    position: absolute;
+    top: 107px;
+    left: 75px;
+    right: 0;
+    margin: 0 auto;
+}
+
+// ion-img.mailwidth.camera_img.md.hydrated {
+//     width: 31px;
+//   position: absolute;
+//   top: 107px;
+//   left: 75px;
+//   right: 0;
+//   margin: 0 auto;
+// }
+
+ion-buttons.buttons-first-slot {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+ion-buttons.buttons-first-slot img {
+    width: 12px;
+    height: 19px;
+}
+
+// form.lodin-form.ng-untouched.ng-pristine.ng-valid {
+//     margin: 29px;
+// }
+.card-title {
+    border: 1px solid #aaaaaa;
+    height:40px;
+    border-radius: 12px;
+    box-shadow: none !important;
+    margin-bottom: 14px;
+    color: #000;
+}
+.card-title ion-img.mailwidth.hydrated {
+    width: 18px;
+    margin: 0px 15px;
+}
+ion-card.hydrated {
+    box-shadow: none;
+}
+.button_forget{
+    background: -webkit-gradient(linear, left top, right top, color-stop(16%, #0032ea), color-stop(82%, #ebd117));
+    background: linear-gradient(to right, #0032ea 16%, #ebd117 82%);
+    --background: auto;
+    height: 44px;
+    border-radius: 50px;
+    box-shadow: none !important;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form.lodin-form.ng-untouched.ng-pristine.ng-valid input {
+    padding: 5px 0px;
+}
+.profile-edit-div{
+    padding: 5px 0px;
+}
+.button-native::after {
+    display:none;
+}
+.forget_password {
+    box-shadow: none !important;
+}
+
+.toolbar-title {
+    
+    position: absolute !important;
+    top: 0;
+    /* text-align: center; */
+    left: 0%;
+    right: 50%;
+}

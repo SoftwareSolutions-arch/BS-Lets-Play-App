@@ -1,0 +1,61 @@
+  <ion-header style="background-color: white;" no-border>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-menu-button [routerLink]="['/dashboard']" auto-hide="false">
+            <img src="././assets/Icons/ic_back.png">
+          </ion-menu-button>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="dashobard_title">Edit Profile</ion-title>
+      <ion-img class="mailwidth profile_img" [src]="currentImage ==='' ? '/assets/image/profile.png' : baseString +currentImage"></ion-img>
+      <ion-img class="mailwidth camera_img" src="/assets/Icons/camerra.png" (click)="getImageFromCamera()"></ion-img>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="profile-edit-div">
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]="firstName" class="mail_img" inputmode="username" placeholder="First Name" value="test">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_user.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]="lastName" class="mail_img" inputmode="username" placeholder="Last Name" value="test">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_user.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]="email" class="mail_img" inputmode="email" placeholder="Email" value="test@gmail.com">
+            <ion-img class="mailwidth" src="/assets/Icons/email.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <!--<ion-card>
+        <div class="row_design">
+          <ion-label class="add_title">DOB: </ion-label>
+          <div class="input_box">
+            <ion-datetime [(ngModel)]="dob" picker-format="DD-MM-YYYY" display-format="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+          </div>
+        </div>
+      </ion-card>-->
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]="country" class="mail_img" inputmode="text" placeholder="Country" value="India">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_user.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div class="forgetbtn" (click)="updateData()">
+          <p class="button_forget">Update</p>
+        </div>
+      </ion-card>
+    </div>
+  </ion-content>

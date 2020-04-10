@@ -1,0 +1,159 @@
+<ion-menu side="start" content-id="main-content">
+  <div class="sidebar">
+    <ion-header no-border-bottom>
+      <ion-toolbar style="background: none;" translucent class="drover_header">
+        <ion-title>
+          <ion-avatar>
+            <img class="profile_image" src='https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'>
+          </ion-avatar>
+          <div class="profile_des">
+            <span>{{this.firstName}}</span>
+            <p>{{this.email}}</p>
+          </div>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list lines="none">
+        <ion-item class="focues">
+          <ion-img src="/assets/Icons/ic_profile.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label [routerLink]="['/profile']" class="my_label">Profile</ion-label>
+        </ion-item>
+        <ion-item>
+          <!-- <button ion-button menuClose>Close Menu</button> -->
+          <ion-img src="/assets/Icons/ic_home.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label (click)="Dashbaord()" routerDirection="root" class="my_label">Home</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-img src="/assets/Icons/ic_message.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label [routerLink]="['/message']" routerDirection="root" class="my_label">Messages</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-img src="/assets/Icons/ic_noti_black.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label [routerLink]="['/notification']" routerDirection="root" class="my_label">Notification</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-img src="/assets/Icons/ic_plus_black.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label (click)="someAction()" class="my_label">Invite Friends</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-img src="/assets/Icons/ic_setting_black.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label [routerLink]="['/setting']" routerDirection="root" class="my_label" class="my_label">Settings
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-img src="/assets/Icons/ic_logout_black.png" slot="start" style="width: 7%;"></ion-img>
+          <ion-label [routerLink]="['/home']" routerDirection="root" class="my_label">Logout</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </div>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+
+</div>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button auto-hide="false">
+          <img class="sidebutton" src="././assets/Icons/ic_menu.png">
+        </ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="dashobard_title">Organize Activity</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="dashboard">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#ListView">Ongoing</a></li>
+    <li><a data-toggle="tab" href="#Map">Completed</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="ListView" class="tab-pane fade in active">
+      <ion-card *ngFor="let item of this.AllProductsHomePage">
+        <div>
+        <ion-card-content class="image_dash" style="padding: 8px !important;" >
+          <img class="image_data" (click)="getactivitybyid(item)" src="https://alphawizz.com/bsletsplay/{{item.photo}}">
+          <span class="arrow">
+            <h2 class="price">{{item.price}}</h2>
+          </span>
+          <div class="card-title">{{item.activity_name}}</div>
+          <div class="card-subtitle">
+            <img class="icon_cal" src="../../assets/Icons/ic_calendar.png">
+            <a class="date"> {{item.start_datetime}} <label class="to">to</label>{{item.end_datetime}} </a>
+          </div>
+          <div class="card-subtitle">
+            <img class="place" src="../../assets/Icons/ic_location.png">
+            <a class="location_title">{{item.location}}</a>
+          </div>
+          <div class="right_box-imagedata">
+            <img class="edit" (click)="editactivity(item)" src="../../assets/Icons/ic_edit.png">
+            <img class="delete" (click)="deleteactivity(item)" src="../../assets/Icons/ic_delete_blue.png">
+          </div>
+        </ion-card-content>   
+       </div>
+      </ion-card>   
+      <!-- <div>length is:{{this.item.length}}</div> -->
+         <div *ngIf="!this.AllProductsHomePage && this.thispageloaded"  class="event_manage">No Ongoing event</div>
+       <img [routerLink]="['/add-activity']" class="plus_icn" src="../../assets/Icons/Group 1.png">
+    </div>
+    <!-- <div id="Map" class="tab-pane fade">
+      <div id="ListView" class="tab-pane fade in active">
+        <div class="imge_box">
+          <ion-card *ngFor="let item of this.AllProductsHomePage">
+            <ion-card-content class="image_dash" style="padding: 8px !important;" [routerLink]="['/activity-detail']">
+              <img src="http://alphawizz.com/bsletsplay/uploads/activity_photos/{{item.photo}}">
+              <span class="arrow">
+                <h2 class="price">{{item.price}}</h2>
+              </span>
+              <div class="card-title">{{item.activity_name}}</div>
+              <div class="card-subtitle">
+                <img class="icon_cal" src="../../assets/Icons/ic_calendar.png">
+                <a class="date"> {{item.start_datetime}} <label class="to">to</label>{{item.end_datetime}} </a>
+              </div>
+              <div class="card-subtitle">
+                <img class="place" src="../../assets/Icons/ic_location.png">
+                <a class="location_title">{{item.location}}</a>
+              </div>
+              <div class="right_box-imagedata">
+                <img class="edit" src="../../assets/Icons/ic_edit.png">
+                <img class="delete" src="../../assets/Icons/ic_delete_blue.png">
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </div> -->
+  <div id="Map" class="tab-pane fade">
+      <div id="ListView" class="tab-pane fade in active">
+        <div class="imge_box">
+
+          <div class="event_manage">No completed event</div>
+          <!-- <ion-card *ngFor="let item of this.AllProductsHomePage">
+            <ion-card-content class="image_dash" style="padding: 8px !important;" [routerLink]="['/activity-detail']">
+              <img src="http://alphawizz.com/bsletsplay/uploads/activity_photos/{{item.photo}}">
+              <span class="arrow">
+                <h2 class="price">{{item.price}}</h2>
+              </span>
+              <div class="card-title">{{item.activity_name}}</div>
+              <div class="card-subtitle">
+                <img class="icon_cal" src="../../assets/Icons/ic_calendar.png">
+                <a class="date"> {{item.start_datetime}} <label class="to">to</label>{{item.end_datetime}} </a>
+              </div>
+              <div class="card-subtitle">
+                <img class="place" src="../../assets/Icons/ic_location.png">
+                <a class="location_title">{{item.location}}</a>
+              </div>
+              <div class="right_box-imagedata">
+                <img class="edit" src="../../assets/Icons/ic_edit.png">
+                <img class="delete" src="../../assets/Icons/ic_delete_blue.png">
+              </div>
+            </ion-card-content>
+          </ion-card> -->
+        </div>
+      </div>
+  </div>
+  </div>
+</ion-content>

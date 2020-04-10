@@ -1,0 +1,46 @@
+
+<ion-content class="dashboard">
+  <ion-virtual-scroll></ion-virtual-scroll>
+  <ion-card class="place">
+    <div class="location_img">
+      <ion-img src="../../assets/Icons/pin.png"></ion-img>
+    </div>
+    <div class="dashboar_title">
+      <ion-title class="dashobard_title">Newyork</ion-title>
+    </div>
+    <div class="change_btn">
+      <ion-button class="changebtn">Change</ion-button>
+    </div>
+
+  </ion-card>
+  <ion-tabs>
+    <ion-tab-bar class="white_tab" slot="top" color="light">
+      <ion-tab-button class="speakers" tab="speakers">
+        <ion-label class="speaker">List View</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="map">
+        <ion-label class="contact_label">Map</ion-label>
+        <!-- <div #map id="map" style="width: 500;height: 500;"></div> -->
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <div class="discover_img">
+        <ion-img class="discover_imgsearch" src="../../assets/Icons/ic_search_blue.png"></ion-img>
+        <ion-label>Search</ion-label>
+
+      </div>
+      <div class="discover_img">
+        <ion-img class="discover_imgmail" src="../../assets/Icons/mesage.png"></ion-img>
+        <ion-label>Mail</ion-label>
+      </div>
+      <div class="discover_img">
+        <ion-img class="discover_imgsetting" src="../../assets/Icons/ic_setting_blue.png"></ion-img>
+        <ion-label>Setting</ion-label>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "BS-LetsPlay-Part",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

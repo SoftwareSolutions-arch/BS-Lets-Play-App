@@ -1,0 +1,110 @@
+.containter {
+    background: linear-gradient(to bottom, #0032ea 0%, white 62%);
+    background-size: 100%;
+    --background: none;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    }
+    
+    .error-message {
+    color: var(--ion-color-danger);
+    }
+    
+    .card-title {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 31%;
+    }
+    
+    ion-button {
+    padding: 0px;
+    block-size: 50px;
+    --border-radius: 40px;
+    overflow: hidden;
+    }
+    
+    .button_home {
+    width: 83px;
+    height: 83px;
+    background: linear-gradient(to bottom, #3036fe 4%, #ebd117 81%);
+    display: block;
+    margin: 0px auto 2px;
+    border-radius: 8px;
+    margin-top: 10%;
+    }
+    
+    ion-button.button_forget.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    // / width: 100px; /
+    height: 46px;
+    --background: none;
+    background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#0032ea),
+    to(#e9da6c)
+    );
+    background: linear-gradient(to, #0032ea 0%, #e9da6c 100%);
+    
+    border-radius: 67px;
+    overflow: hidden;
+    }
+    
+    .forgetbtn
+    ion-button.button_forget.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    background: linear-gradient(to right, #0032ea 16%, #ebd117 82%);
+    }
+    p.singuptxt {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 6px;
+    }
+    ion-img.mail_img.md.hydrated {
+    width: 21px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 0px 0px 13px;
+    }
+    ion-input.mail_img.sc-ion-input-md-h.sc-ion-input-md-s.md.hydrated {
+    font-size: 14px;
+    color: #000000c9;
+    border-radius: 43px;
+    }
+    ion-img.mailwidth.md.hydrated {
+    width: 17px !important;
+    margin-right: 20px !important;
+    margin-left: 7px !important;
+    }
+    ion-checkbox.checkboxagree.md.interactive.hydrated {
+    background: #000;
+    }
+    .social_icn ion-img.md.hydrated {
+        width: 40px;
+        display: inherit;
+        margin: 0px 16px;
+    }
+    .social_icn {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+p.dont_have_txt {
+    margin-bottom: 2px;
+}
+.forgetbtn {
+    margin-bottom: 15px;
+}
+
+.validate {
+    margin-left: 15px;
+    font-size: 18px;
+    color: red;
+  }
+
+  .error-message {
+    margin-left: 10px;
+}

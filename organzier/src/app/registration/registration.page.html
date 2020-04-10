@@ -1,0 +1,133 @@
+<ion-content class="containter">
+  <div class="ion-padding">
+    <div class="button_home"></div>
+    <p class="singuptxt">SIGN UP</p>
+    <form [formGroup]="loginForm">
+      <ion-card>
+        <ion-item class="card-title">
+          <ion-input (click)="nameclick()" class="mail_img" formControlName="name" inputmode="name" placeholder="Name">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_user.png" style="width: 7%;"></ion-img>
+          </ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div *ngIf="namevaild">
+        <div class="error-messages">
+          <ng-container *ngFor="let error of error_messages.name">
+            <div class="error-message"
+              *ngIf="loginForm.get('name').hasError(error.type) && (loginForm.get('name').dirty || loginForm.get('name').touched)">
+              {{ error.message }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item class="card-title">
+          <ion-input (click)="emailclick()" class="mail_img" formControlName="email" inputmode="email"
+            placeholder="Email ID">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_mail.png" style="width: 7%;"></ion-img>
+          </ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div *ngIf="emailvaild">
+        <div class="error-messages">
+          <ng-container *ngFor="let error of error_messages.email">
+            <div class="error-message" *ngIf="loginForm.get('email').hasError(error.type) && 
+           (loginForm.get('email').dirty || loginForm.get('email').touched)">
+              {{ error.message }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item class="card-title">
+          <ion-input  type="tel" (click)="mobileclick()" class="mail_img" formControlName="mobile_number" inputmode="mobile_number"
+            placeholder="Mobile Number">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_phone.png" style="width: 6%;"></ion-img>
+          </ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div *ngIf="mobilevaild">
+        <div class="error-messages">
+          <ng-container *ngFor="let error of error_messages.mobile_number">
+            <div class="error-message"
+              *ngIf="loginForm.get('mobile_number').hasError(error.type) && (loginForm.get('mobile_number').dirty || loginForm.get('mobile_number').touched)">
+              {{ error.message }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item class="card-title">
+          <ion-input placeholder="Password" (click)="passwordclick()" class="mail_img" formControlName="password"
+            type="password">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_pwd.png" style="width: 7%;"></ion-img>
+          </ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div *ngIf="passwordvaild">
+        <div class="error-messages">
+          <ng-container *ngFor="let error of error_messages.password">
+            <div class="error-message"
+              *ngIf="loginForm.get('password').hasError(error.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+              {{ error.message }}
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <ion-card>
+        <ion-item class="card-title">
+          <ion-input placeholder="Confirm Password" (click)="cpasswordclick()" class="mail_img"
+            formControlName="confirmpassword" type="password">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_pwd.png" style="width: 7%;"></ion-img>
+          </ion-input>
+        </ion-item>
+      </ion-card>
+
+      <div *ngIf="cpasswordvaild">
+        <div class="error-messages">
+          <ng-container *ngFor="let error of error_messages.confirmpassword">
+            <div class="error-message"
+              *ngIf="loginForm.get('confirmpassword').hasError(error.type) && (loginForm.get('confirmpassword').dirty || loginForm.get('confirmpassword').touched)">
+              {{ error.message }}
+            </div>
+          </ng-container>
+        </div>        
+      </div>
+      <div class="error-message" *ngIf="loginForm.get('confirmpassword').hasError('equalTo') && loginForm.get('confirmpassword').dirty || loginForm.get('confirmpassword').hasError('equalTo') && loginForm.get('confirmpassword').touched">
+        Password Mismatch
+        </div>
+
+      <div class="forget_password">
+        <p style="text-align: center; padding-top: 10px;">
+          <ion-checkbox (click)="data($event)" class="checkboxagree" required></ion-checkbox> I agree to the<span
+            style="color: blue;">Terms</span>
+          and <span style="color: blue;">Conditions</span><br>
+          &<span style="color: blue;"> Privacy Policy</span>
+        </p>
+      </div>
+
+      <div class="forgetbtn">
+        <ion-button class="button_forget" expand="block" (click)="onRegister()" [disabled]="!loginForm.valid">
+          <h6><strong style="font-weight: inherit;">Submit</strong></h6>
+        </ion-button>
+      </div>
+
+      <p style="text-align: center;">Or Continue with</p>
+      <div class="social_icn">
+        <ion-img src="/assets/Icons/ic_google.png"></ion-img>
+        <ion-img src="/assets/Icons/ic_facebook.png">
+        </ion-img>
+      </div>
+      <p style="text-align: center;">Already have an Account?</p>
+      <p class="singin_btn" style="text-align: center;color: blue;" [routerLink]="['/login']">Sign In Here</p>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-content class="inner_containter">
+  <!-- <img src="../../assets/image/loginFullscreen.png"> -->
+  <div class="ion-padding">
+    <div class="button_home"></div>
+    <p class="logitxt"><b>CHANGE PASSWORD</b></p>
+    <div class="lodin-form">
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]='oldPswd' class="mail_img" inputmode="password" placeholder="Old Password" type="password">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_pwd.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]='newPswd' class="mail_img" inputmode="password" placeholder="New Password" type="password">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_pwd.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <ion-card>
+        <div class="card-title">
+          <ion-input [(ngModel)]='reEnterPswd' class="mail_img" inputmode="password" placeholder="Re-Enter New Password" type="password">
+            <ion-img class="mailwidth" src="/assets/Icons/ic_pwd.png"></ion-img>
+          </ion-input>
+        </div>
+      </ion-card>
+      <div class="forgetbtn">
+        <!-- <ion-button [routerLink]="['/login']" class="button_forget" expand="block"> -->
+          <ion-button (click)='submitPassword()' class="button_forget" expand="block">
+          <strong class="signtext">Change Password</strong>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

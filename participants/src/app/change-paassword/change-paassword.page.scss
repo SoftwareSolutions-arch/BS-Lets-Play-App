@@ -1,0 +1,113 @@
+.inner_containter {
+    background-image: url("../../assets/image/loginFullscreen.png");
+    background-size: 100% 100%;
+    --background: none;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    }
+    
+    .error-message {
+    color: var(--ion-color-danger);
+    }
+    
+    .card-title {
+    padding: 16px;
+    margin: 0px;
+    height: 49px;
+    }
+    
+    ion-button {
+    padding: 0px;
+    block-size: 50px;
+    --border-radius: 40px;
+    overflow: hidden;
+    }
+    
+    .button_home {
+    width: 88px;
+    height: 88px;
+  
+    background:linear-gradient(to bottom, #0032ea 0%, #e9da6c 100%);
+    display: block;
+    margin: 0px auto 20px;
+    border-radius: 8px;
+    margin-top: 12%;
+    }
+    
+    ion-button.button_forget.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    // height: 58px;
+    --background: none;
+    background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#0032ea),
+    to(#e9da6c)
+    );
+    background: linear-gradient(to, #0032ea 0%, #e9da6c 100%);
+    
+    border-radius: 67px;
+    overflow: hidden;
+    }
+    
+    .forgetbtn
+    ion-button.button_forget.md.button.button-block.button-solid.ion-activatable.ion-focusable.hydrated {
+    background: linear-gradient(to right, #0032ea 16%, #ebd117 82%);
+    }
+    strong.signtext {
+    font-size: 18px;
+    font-weight: bolder;
+    }
+    p.logitxt {
+    font-size: 20px;
+    text-align: center;
+    }
+    ion-img.mail_img.md.hydrated {
+    width: 21px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 0px 0px 13px;
+    }
+    input.native-input.sc-ion-input-md {
+    padding: 0px 0px 11px;
+    }
+    ion-img.mailwidth.md.hydrated {
+    width: 17px;
+    margin-right: 20px;
+    padding: 0px 0px -5px;
+    }
+    ion-input.mail_img.sc-ion-input-md-h.sc-ion-input-md-s.md.hydrated {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #000000c9;
+    }
+    form.lodin-form.ng-untouched.ng-pristine.ng-valid {
+    padding-top: 10px;
+    }
+
+    .lodin-form{
+        padding: 10px;
+    }
+
+    .forget_password {
+    color: #747474;
+    }
+    .forgetbtn{
+        margin-bottom: 16px;
+    }
+    .social_icn ion-img.md.hydrated {
+        width: 40px;
+        display: inherit;
+        margin: 0px 16px;
+    }
+    .social_icn {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+p.dont_have_txt {
+    margin-bottom: 2px;
+}

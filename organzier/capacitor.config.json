@@ -1,0 +1,9 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "BS-LetsPlay-Org",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/opt/lampp/htdocs/Android/android-studio-ide-191.6010548-linux/android-studio/bin/studio.sh"
+}

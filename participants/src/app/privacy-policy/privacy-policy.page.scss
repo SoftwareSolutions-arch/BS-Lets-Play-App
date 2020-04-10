@@ -1,0 +1,98 @@
+.about h1 {
+    font-size: 20px;
+}
+.text-center {
+    text-align: center!important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center!important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-size: 12px;
+    line-height: 21px;
+}
+.about p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    text-align: justify;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+img {
+    width: 15px;
+}
+
+
+
+.notification_icon {
+    width: 10%;
+    float: left;
+    margin: 0px;
+}
+.user_details {
+    width: 70%;
+    float: left;
+    margin: 0px;
+    padding-left: 20px;
+}
+.user_details .sc-ion-label-md-h{
+    font-size: 13px;
+}   
+
+.delete_icon {
+    float: left;
+    width: 20%;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.notification_icon .md.hydrated, .delete_icon .md.hydrated{
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+.delete_icon p {
+    font-size: 10px;
+    text-align: center;
+    color: #797878;
+}
+
+
+.in-toolbar.toolbar-title-default.hydrated {
+    padding: 11px 0px;
+    --background: auto;
+    background: url('../../assets/Icons/Shape_11.png'); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    
+    ion-content.dashboard.hydrated {
+    --background: auto;
+    background: linear-gradient(to bottom, #0012ff, rgba(183, 197, 252, 0.27));
+
+    }
+
+    ion-title.dashobard_title.md.title-default.hydrated {
+    color: #fff;
+    font-weight: 18px !important;
+    margin-left: 14%;
+    width: auto;
+    font-weight: bold;
+    }

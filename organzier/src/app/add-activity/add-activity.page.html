@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-toolbar class="activty_detail">
+    <ion-buttons slot="start">
+      <a class="backbtn_img" [routerLink]="['/dashboard']"><img class="datagram"
+          src="../../assets/Icons/back_white.png"></a>
+      <!-- <ion-back-button text="" [routerLink]="['/dashboard']" defaultHref="dashboad" styl></ion-back-button> -->
+    </ion-buttons>
+    <ion-title class="header_title">Add Activity</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="activity_backogrund">
+  <ion-card class="formbox">
+    <div class="description">
+      <form [formGroup]="addActivityForm">
+        <div class="row_design">
+          <ion-label class="add_title">Activity Name</ion-label>
+          <!-- <ion-button class="bttn_num">6</ion-button>' -->
+          <div class="input_box">
+            <ion-input formControlName="activityname" class="add_box"></ion-input>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Activity Details </ion-label>
+          <div class="input_box txtarea">
+            <ion-textarea formControlName="activitydetails" class="ion_text"></ion-textarea>
+          </div>
+        </div>
+        <div class="row_design_photo">
+          <ion-label class="add_title">
+            Upload photos & Video
+          </ion-label>
+          <div class="input_box textarea_box">
+            <form id="file-upload-form" class="uploader">
+              <!-- <input id="file-upload" (change)="onFileChanged($event)" type="file" name="fileUpload" accept="image/*" /> -->
+              <!-- {{this.images?this.images.name:null}} -->
+              <div id="file-upload" (click)="data()" type="file" name="fileUpload" accept="image/*"  name="fileUpload">
+              <label for="file-upload" id="file-drag">
+                <div>
+                  <div *ngIf="!this.capturedImage">
+                    <img id="file-image" src="../../assets/Icons/upload.png" alt="Preview" class="hidden" >
+                  </div>
+                  <!-- -->
+                  <div *ngIf="this.capturedImage">
+                    {{this.capturedImage}}
+                  </div>
+                  <!-- {{this.images?this.images.name:null}} -->
+                </div>
+              </label>
+              </div>
+              <!-- <label>{{this.images?this.images.name:null}}</label> -->
+            </form>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Total Spots </ion-label>
+          <div class="input_box">
+            <ion-input type="number" formControlName="totalspots" class="add_box"></ion-input>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Free Spots </ion-label>
+          <div class="input_box">
+            <ion-input type="number" formControlName="freespots" class="add_box"></ion-input>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title" style="font-size: 10px;width: 43%;position: absolute;text-align: left;">
+            Restricted Participants <br> by Skill level
+          </ion-label>
+          <div class="input_box skill_level">
+            <ion-item>
+            <ion-select class="selectbox" placeholder="Skill Level" formControlName="skilllevel">
+              <ion-label>Skill level</ion-label>
+              <ion-select-option>Low Beginners</ion-select-option>
+              <ion-select-option>Advance Beginners</ion-select-option>
+              <ion-select-option>Low Intermediate</ion-select-option>
+              <ion-select-option>Advance Intermediate</ion-select-option>
+              <ion-select-option>Advance</ion-select-option>
+              <ion-select-option>Elite</ion-select-option>
+            </ion-select>
+          </ion-item>
+            <!-- <ion-input class="add_box"></ion-input> -->
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Price </ion-label>
+          <div class="input_box">
+            <ion-input type="number" formControlName="price" class="add_box"></ion-input>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">StartDate/Time </ion-label>
+          <div class="input_box bottomSpace">
+            <!-- <ion-datetime class="datetime" formControlName="startdatetime" value="2001-02-19" placeholder="Select Date"></ion-datetime> -->
+            <ion-datetime  picker-format="DD-MM-YYYY" display-format="DD MMM YYYY" formControlName="startdatetime" placeholder="Select Date">
+            </ion-datetime>
+
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">EndDate/Time </ion-label>
+          <div class="input_box bottomSpace">
+            <!-- <ion-datetime class="datetime" formControlName="enddatetime" value="2019-07-21" placeholder="Select Date"></ion-datetime> -->
+            <ion-datetime  picker-format="DD-MM-YYYY" display-format="DD MMM YYYY" formControlName="enddatetime" placeholder="Select Date"></ion-datetime>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Location </ion-label>
+          <div class="input_box">
+            <ion-input (input)='onChangeLocation($event.target.value)' formControlName="location" class="add_box"></ion-input>
+          </div>
+        </div>
+        <div class="location-option" *ngFor="let item of this.autocompleteItemsSearch" tappable (click)="chooseItemSource(item)">
+          <div>{{item.description}}</div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Court Blocked </ion-label>
+          <div class="radio_btn">
+            <ion-toggle value="" (click)="courtblocked($event)" formControlName="courtblocked"></ion-toggle>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title" style="width: 64%;">
+            Mark Game As Private
+          </ion-label>
+          <div class="radio_btn">
+            <ion-toggle value="" formControlName="markprivate"></ion-toggle>
+          </div>
+        </div>
+        <div class="row_design">
+          <ion-label class="add_title">Post Game </ion-label>
+          <div class="radio_btn">
+            <ion-toggle value="" formControlName="postgame" ></ion-toggle>
+          </div>
+        </div>
+      </form>
+    </div>
+  </ion-card>
+  <ion-row>
+    <ion-col>
+      <div class="row_btn1" (click)="addform()">
+        <ion-button class="edit_txt" >Save</ion-button>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="row_btn2" [routerLink]="['/dashboard']">
+        <ion-button class="edit_txt">Discard</ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
